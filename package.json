@@ -14,9 +14,11 @@
     "mongoose": "^7.6.1",
     "next": "13.5.4",
     "next-auth": "^4.23.2",
+    "next-sanity": "^5.5.8",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-icons": "^4.11.0",
+    "sanity": "^3.18.0"
   },
   "devDependencies": {
     "autoprefixer": "^10",
