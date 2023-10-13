@@ -2,7 +2,7 @@
 
 import React from 'react'
 import {Footer, Blog, Brand,Cta, Possibility, Features, Header} from '/components';
-import './globals.css'
+// import './globals.css'
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Header/>
       </div>
       <Brand/>
-      {/* <WhatGPT3/> */}
+      <WhatGPT3/>
       <Features/>
       <Possibility/>
       <Cta/>
