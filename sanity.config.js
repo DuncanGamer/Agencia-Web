@@ -7,7 +7,9 @@ projectId: "8n8yk8j9",
 dataset: "production",
 title: "next-sanity-studio",
 apiVersion: "2023-03-25",
-plugins: [deskTool(), visionTool({defaultApiVersion: apiVersion})],
+plugins: [deskTool(), 
+    //to check queries
+    visionTool({defaultApiVersion: apiVersion})],
 basePath : "/admin",
 
 
