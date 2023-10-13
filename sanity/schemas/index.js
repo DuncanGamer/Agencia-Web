@@ -61,7 +61,27 @@ const customers = {
     },
   ],
 };
+const technos = {
+  name: "technos",
+  title: "Technos",
+  type: "document",
+  fields: [
+    {
+      name: "name",
+      title: "Name",
+      type: "string",
+    },
+    {
+      name: "image",
+      title: "Image",
+      type: "image",
+      options: {
+        hotspot: true,
+      },
+    },
+  ],
+};
 
-const schemas = [projects, customers];
+const schemas = [projects, customers, technos];
 
 export default schemas;

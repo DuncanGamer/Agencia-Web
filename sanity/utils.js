@@ -12,7 +12,7 @@ export async function getAllProjects() {
     },
   });
 
-  return res
+  return res;
 }
 export async function getAllCustomers() {
   const query = groq`*[_type == 'customers']`;
@@ -24,6 +24,17 @@ export async function getAllCustomers() {
       },
     },
   });
+}
+export async function getAllTechnos() {
+  const query = groq`*[_type == 'technos']`;
+  const res = await sanityClient.fetch({
+    query: query,
+    config: {
+      next: {
+        revalidate: 0,
+      },
+    },
+  });
 
-  return res
+  return res;
 }
