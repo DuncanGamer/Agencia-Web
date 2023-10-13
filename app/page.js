@@ -16,9 +16,9 @@ function App() {
      {/* <Whatgpt3/> */}
       
       <Possibility/>
-      <Cta/>
-      <Blog/>
      
+      <Blog/>
+      <Cta/>
     </div>
   );
 }
