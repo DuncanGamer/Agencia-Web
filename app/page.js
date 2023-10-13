@@ -1,13 +1,13 @@
 import React from "react";
-import { Blog, Brand, Cta, Possibility, Header } from "/components";
 import { getAllCustomers, getAllProjects } from "@/sanity/utils";
+import { Projects, Brand, Cta, Possibility, Header } from "@/components";
 // import './globals.css'
 
 async function App() {
   const customers = await getAllCustomers();
   const projects = await getAllProjects();
 
-  console.log(customers, projects)
+  console.log(customers, projects);
 
   return (
     <div className="App">
@@ -19,7 +19,7 @@ async function App() {
 
       <Possibility />
       <Cta />
-      <Blog />
+      <Projects projects={projects} />
     </div>
   );
 }
