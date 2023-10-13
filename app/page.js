@@ -1,27 +1,27 @@
-
-
-
-import React from 'react'
-import {Blog, Brand,Cta, Possibility, Header, Whatgpt3} from '/components';
+import React from "react";
+import { Blog, Brand, Cta, Possibility, Header } from "/components";
+import { getAllCustomers, getAllProjects } from "@/sanity/utils";
 // import './globals.css'
 
-function App() {
+async function App() {
+  const customers = await getAllCustomers();
+  const projects = await getAllProjects();
+
+  console.log(customers, projects)
+
   return (
-    <div className='App' >
-      <div className='gradient__bg'>
-     
-      <Header/>
+    <div className="App">
+      <div className="gradient__bg">
+        <Header />
       </div>
-      <Brand/>
-     {/* <Whatgpt3/> */}
-      
-      <Possibility/>
-      <Cta/>
-      <Blog/>
-     
+      <Brand />
+      {/* <Whatgpt3/> */}
+
+      <Possibility />
+      <Cta />
+      <Blog />
     </div>
   );
 }
 
 export default App;
-
