@@ -1,7 +1,8 @@
 
 
+
 import React from 'react'
-import {Footer, Blog, Brand,Cta, Possibility, Features, Header} from '/components';
+import {Blog, Brand,Cta, Possibility, Header, Whatgpt3} from '/components';
 // import './globals.css'
 
 function App() {
@@ -12,12 +13,12 @@ function App() {
       <Header/>
       </div>
       <Brand/>
-      <WhatGPT3/>
-      <Features/>
+     {/* <Whatgpt3/> */}
+      
       <Possibility/>
       <Cta/>
       <Blog/>
-      <Footer/>
+     
     </div>
   );
 }

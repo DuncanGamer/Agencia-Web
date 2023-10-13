@@ -7,11 +7,11 @@ import Image from "next/image";
 
 const Menu = ()=>
 (  <>
-  <p><a href='#home'>Home</a></p>
-  <p><a href='#wgpt3'>What is GPT?</a></p>
-  <p><a href='#possibility'>OpenAI</a></p>
-  <p><a href='#features'>Case Studies</a></p>
-  <p><a href='#blog'>Library</a></p>
+  <p><a href='#home'>Agence web</a></p>
+  <p><a href='#wgpt3'>Nos servives</a></p>
+  <p><a href='#possibility'>Blog</a></p>
+  <p><a href='#features'>Ressources</a></p>
+  <p><a href='#blog'>Contact</a></p>
   </>
   )
 

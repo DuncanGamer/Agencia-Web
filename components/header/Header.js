@@ -1,21 +1,19 @@
 import React from "react";
 import "./header.css";
 import people from "public/assets/people.png";
-import ai from "public/assets/ai.png";
+
 import Image from "next/image";
+import estratejia from "public/assets/estratejia.png";
 
 const Header = () => {
   return (
     <div className="gpt3__header section__padding" id="home">
       <div className="gpt3__header-content">
         <h1 className="gradient__text">
-          Let's Build Something amazing with GPT-3 OpenAI
+        L'agence digital DigitalToile
         </h1>
         <p>
-          Yet bed any for travelling assistance indulgence unpleasing. Not
-          thoughts all exercise blessing. Indulgence way everithing joy
-          altereation boisterus the attachement. Party we years to order allow
-          asked of.
+        Chez DigitalToile, nous sommes bien plus qu'une simple agence web. Nous sommes vos partenaires dans la communication digitale, la création de sites web, les publicités en ligne, le référencement SEO et le design. 
         </p>
         <div className="gpt3__header-content__input">
         <input type="email" placeholder="Your Email Addres"></input>
@@ -34,10 +32,10 @@ const Header = () => {
        </div>
        <div className="gpt3__header-image">
         <Image 
-        src={ai} 
-        alt="ai"
-        width={200}
-        height={200} />
+        src={estratejia} 
+        alt="product"
+        width={1500}
+        height={1500} />
       </div>
     </div>
   );
