@@ -7,18 +7,18 @@ const cta = () => {
   return (
     <div className="gpt3__cta section__padding" id="possibility">
     <div className="gpt3__cta-content">
-        <div class="max-w-sm mx-auto p-4 rounded-md shadow-lg"> 
-            <h1 class="text-xl font-semibold gradient__text mb-2">Formulaire de contact</h1>
+        <div className="max-w-sm mx-auto p-4 rounded-md shadow-lg"> 
+            <h1 className="text-xl font-semibold gradient__text mb-2">Formulaire de contact</h1>
             <form method="post">
-                <div class="mb-3"> 
+                <div className="mb-3"> 
                     <label for="email" class="block text-gray-300 text-sm font-medium mb-2">Adresse électronique:</label>
                     <input type="email" id="email" name="email" required class="w-full py-2 px-3 border rounded-md"/>
                 </div>
-                <div class="mb-1 mt-1"> 
+                <div className="mb-1 mt-1"> 
                     <label for="phone" class="block text-gray-300 text-sm font-medium mb-2">Téléphone:</label>
                     <input type="tel" id="phone" name="phone" class="w-full py-2 px-3 border rounded-md"/>
                 </div>
-                <div class="mb-3"> 
+                <div className="mb-3"> 
                     <label for="summary" class="block text-gray-300 text-sm font-medium mb-2">Résumé:</label>
                     <textarea id="summary" name="summary" rows="3" class="w-full py-2 px-3 border rounded-md"></textarea>
                 </div>
