@@ -1,6 +1,6 @@
 import React from "react";
 import { getAllCustomers, getAllProjects, getAllTechnos } from "@/sanity/utils";
-import { Projects, Brand, Cta, Possibility, Header } from "@/components";
+import { Projects, Brand, Cta, Possibility, Header, Whatgpt3 } from "@/components";
 // import './globals.css'
 
 async function App() {
@@ -11,10 +11,10 @@ async function App() {
   return (
     <div className="App">
       <div className="gradient__bg">
-        <Header />
+      <Header />
       </div>
       <Brand technos={technos} />
-      {/* <Whatgpt3/> */}
+      <Whatgpt3/>
 
       <Possibility />
       <Cta />

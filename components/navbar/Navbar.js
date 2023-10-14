@@ -4,6 +4,7 @@ import './navbar.css'
 import {RiMenu3Line,RiCloseLine} from 'react-icons/ri';
 import logo from '/public/assets/logo.svg'
 import Image from "next/image";
+import {signIn, signOut, useSession, getProviders} from 'next-auth/react'
 
 const Menu = ()=>
 (  <>
@@ -11,7 +12,7 @@ const Menu = ()=>
   <p><a href='#wgpt3'>Nos servives</a></p>
   <p><a href='#possibility'>Blog</a></p>
   <p><a href='#features'>Ressources</a></p>
-  <p><a href='#blog'>Contact</a></p>
+  <p><a href='#Cta'>Contact</a></p>
   </>
   )
 
@@ -28,12 +29,15 @@ const Navbar = () => {
           <Image src={logo} alt='logo'/>
         </div>
         <div className='gpt3__navbar-links_container'>
-          <Menu />
+          <Menu/>
         </div>
       </div>
       <div className='gpt3__navbar-sign'>
         <p>Se connecter</p>
-        <button type='button'>S'inscrire</button>
+        <button 
+        type='button'
+        onClick={signIn}
+        >S'inscrire</button>
       </div>
       <div className='gpt3__navbar-menu'>
         {toggleMenu 
@@ -46,7 +50,10 @@ const Navbar = () => {
           <Menu/>
           <div className='gpt3__navbar-menu_container-links-sign'>
         <p>Se connecter</p>
-        <button type='button'>S'inscrire</button>
+        <button 
+        type='button'
+        onClick={signIn}
+        >S'inscrire</button>
       </div>
         </div>
         </div>
