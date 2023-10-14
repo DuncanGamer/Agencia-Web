@@ -30,8 +30,8 @@ const cta = () => {
         <Image 
             src={contact} 
             alt="possibility"
-            width={200} 
-            height={200}
+            width={500} 
+            height={475}
         />
     </div>
 </div>
