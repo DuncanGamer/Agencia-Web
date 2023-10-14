@@ -4,6 +4,10 @@ import contact from 'public/assets/contact.png';
 import Image from "next/image";
 
 const cta = () => {
+import contact from 'public/assets/contact.png';
+import Image from "next/image";
+
+const cta = () => {
   return (
     <div className="gpt3__cta section__padding" id="possibility">
     <div className="gpt3__cta-content">
