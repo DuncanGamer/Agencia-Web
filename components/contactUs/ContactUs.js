@@ -32,8 +32,8 @@ const ContactUs = () => {
       cLastname: lastname,
       cPhone: phone,
       cEmail: email,
-      title: title,
-      body: body,
+      requestTitle: title,
+      requestBody: body,
     };
     try {
       sanityClient.create(query).then(() => {
@@ -173,8 +173,8 @@ const ContactUs = () => {
           </form>
         </div>
       ) : (
-        <div>
-          <h3 className="head-text">{`Merci, ${firstname} ${lastname}, pour nous contacter!`}</h3>
+        <div className=" text-gray-300 text-lg font-medium mx-auto my-auto">
+          <h3>{`Merci, ${firstname} ${lastname}, pour nous contacter!`}</h3>
         </div>
       )}
       <div className="">
