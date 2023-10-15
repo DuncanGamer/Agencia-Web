@@ -4,7 +4,6 @@ import Image from "next/image";
 import { imgUrlFor } from "@/sanity/client";
 
 const Project = ({ project }) => {
-  console.log(project)
   return (
     <div className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">

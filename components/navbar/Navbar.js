@@ -12,7 +12,7 @@ const Menu = ()=>
   <p><a href='#wgpt3'>Nos servives</a></p>
   <p><a href='#possibility'>Blog</a></p>
   <p><a href='#features'>Ressources</a></p>
-  <p><a href='#Cta'>Contact</a></p>
+  <p><a href='#contactUs'>Contact</a></p>
   </>
   )
 
