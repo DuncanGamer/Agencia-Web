@@ -10,8 +10,8 @@ const Possibility = () => {
       <Image 
       src={mano2} 
       alt="possibility"
-      width={200} 
-      height={200}
+      width={500} 
+      height={300}
       />
     </div>
     <div className="gpt3__possibility-content">

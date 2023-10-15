@@ -1,6 +1,10 @@
-import React from "react";
-import "./cta.css";
-import contact from "public/assets/contact.png";
+import React from 'react'
+import './cta.css'
+import contact from 'public/assets/contact.png';
+import Image from "next/image";
+
+const cta = () => {
+import contact from 'public/assets/contact.png';
 import Image from "next/image";
 
 const cta = () => {
