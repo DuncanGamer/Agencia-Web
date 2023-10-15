@@ -6,8 +6,8 @@ import Image from "next/image";
 const cta = () => {
   return (
     <div className="gpt3__whatgpt3 section__margin " id="possibility">
-      <div className=" flex flex-row justify-between ">
-        <div className="max-w-sm mx-auto p-4 rounded-md shadow-lg">
+      <div className=" flex flex-row justify-evenly ">
+        <div className="max-w-sm  p-4 rounded-md shadow-lg">
           <h1 className="text-xl font-semibold gradient__text mb-2">
             Formulaire de contact
           </h1>
@@ -72,6 +72,8 @@ const cta = () => {
             />
         </div>
       </div>
+
+
     </div>
   );
 };
