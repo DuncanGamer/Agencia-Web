@@ -23,10 +23,10 @@ const ContactUs = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
-    const query = {
+    const req = {
       _type: "customerRequests",
       cName: firstname,
       cLastname: lastname,
@@ -35,13 +35,19 @@ const ContactUs = () => {
       requestTitle: title,
       requestBody: body,
     };
-    try {
-      sanityClient.create(query).then(() => {
-        setIsLoading(false);
-        setIsSubmitted(true);
-      });
-    } catch (error) {
-      console.log({ error: error.message });
+    const response = await fetch("/api/sanity/message", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(req),
+    });
+    if (!response.ok) {
+      console.error("Error response from server:", response.statusText);
+      return;
+    } else {
+      setIsLoading(false);
+      setIsSubmitted(true);
     }
   };
 
