@@ -4,8 +4,8 @@ import { Footer, Navbar } from "@/components";
 import Provider from "@/components/Provider";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover & Share AI Prompts",
+  title: "DigitalToile",
+  description: "creation of digital products",
 };
 
 const RootLayout = ({ children }) => (
