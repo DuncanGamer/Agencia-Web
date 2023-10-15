@@ -81,7 +81,44 @@ const technos = {
     },
   ],
 };
+const customerRequests = {
+  name: "customerRequests",
+  title: "Customer Requests",
+  type: "document",
+  fields: [
+    {
+      name: "requestTitle",
+      title: "Title",
+      type: "string",
+    },
+    {
+      name: "requestBody",
+      title: "Body",
+      type: "string",
+    },
+    {
+      name: "cName",
+      title: "Customer Name",
+      type: "string",
+    },
+    {
+      name: "cLastname",
+      title: "Customer Lastname",
+      type: "string",
+    },
+    {
+      name: "cPhone",
+      title: "Customer Phone",
+      type: "string",
+    },
+    {
+      name: "cEmail",
+      title: "Customer Email",
+      type: "string",
+    },
+  ],
+};
 
-const schemas = [projects, customers, technos];
+const schemas = [projects, customers, technos, customerRequests];
 
 export default schemas;

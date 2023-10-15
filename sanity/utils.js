@@ -1,9 +1,9 @@
 import { groq } from "next-sanity";
-import { sanityClient } from "./client";
+import { nextSanityClient } from "./client";
 
 export async function getAllProjects() {
   const query = groq`*[_type == 'projects']`;
-  const res = await sanityClient.fetch({
+  const res = await nextSanityClient.fetch({
     query: query,
     config: {
       next: {
@@ -16,7 +16,7 @@ export async function getAllProjects() {
 }
 export async function getAllCustomers() {
   const query = groq`*[_type == 'customers']`;
-  const res = await sanityClient.fetch({
+  const res = await nextSanityClient.fetch({
     query: query,
     config: {
       next: {
@@ -27,7 +27,7 @@ export async function getAllCustomers() {
 }
 export async function getAllTechnos() {
   const query = groq`*[_type == 'technos']`;
-  const res = await sanityClient.fetch({
+  const res = await nextSanityClient.fetch({
     query: query,
     config: {
       next: {
