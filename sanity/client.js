@@ -6,7 +6,7 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
 const token = process.env.NEXT_PUBLIC_SANITY_EDITOR_TOKEN;
 
-export const nextSanityClient = new SanityClient({
+export const sanityFetchClient = new SanityClient({
   projectId: projectId,
   dataset: dataset,
   useCdn: false,
