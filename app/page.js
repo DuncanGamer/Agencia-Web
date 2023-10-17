@@ -1,6 +1,6 @@
 import React from "react";
 import { getAllCustomers, getAllProjects, getAllTechnos } from "@/sanity/utils";
-import { Projects, Brand, ContactUs, Possibility, Header, Whatgpt3 } from "@/components";
+import { Projects, Brand, ContactUs, Possibility, Header, Whatgpt3,Blog } from "@/components";
 // import './globals.css'
 
 async function App() {
@@ -15,7 +15,7 @@ async function App() {
       </div>
       <Brand technos={technos} />
       <Whatgpt3/>
-
+      {/* <Blog/> */}
       <Possibility />
       <ContactUs />
       <Projects projects={projects} />

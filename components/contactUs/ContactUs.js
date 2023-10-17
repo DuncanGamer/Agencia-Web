@@ -47,7 +47,7 @@ const ContactUs = () => {
 
   return (
     <div
-      className=" bg-footer flex flex-row justify-between section__margin "
+      className=" bg-footer flex flex-row justify-evenly section__margin "
       id="contactUs"
     >
       {!isSubmitted ? (
