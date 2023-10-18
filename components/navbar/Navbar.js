@@ -7,6 +7,7 @@ import Image from "next/image";
 import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import { getOneUserByEmail } from "@/sanity/utils";
+import toast from "react-hot-toast";
 
 const Menu = () => (
   <>
@@ -38,6 +39,11 @@ const Navbar = () => {
     setUser(user);
   };
 
+  const handleSignOut = () => {
+    signOut({redirect: false})
+    toast.success('Vous etez deconnecté')
+  }
+
   useEffect(() => {
     getUser(session?.user?.email);
   }, [session]);
@@ -64,7 +70,7 @@ const Navbar = () => {
             <button
               className="px-4 py-2 text-white bg-[#ff4820] rounded-md font-medium text-lg"
               type="button"
-              onClick={signOut}
+              onClick={handleSignOut}
             >
               Se deconnecter
             </button>

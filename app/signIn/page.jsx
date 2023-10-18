@@ -2,6 +2,7 @@
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import { RiGoogleFill } from "react-icons/ri";
 
 const SignIn = () => {
@@ -31,6 +32,7 @@ const SignIn = () => {
     });
     if (!res.ok) setError(true);
     else router.replace(res.url);
+    toast.success(`Bienvenu!`)
   };
 
   return (
