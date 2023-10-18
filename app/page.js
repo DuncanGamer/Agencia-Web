@@ -1,10 +1,9 @@
 import React from "react";
-import { getAllCustomers, getAllProjects, getAllTechnos } from "@/sanity/utils";
+import { getAllProjects, getAllTechnos, getAllUsers, getOneUser } from "@/sanity/utils";
 import { Projects, Brand, ContactUs, Possibility, Header, Whatgpt3 } from "@/components";
 // import './globals.css'
 
 async function App() {
-  const customers = await getAllCustomers();
   const projects = await getAllProjects();
   const technos = await getAllTechnos();
 

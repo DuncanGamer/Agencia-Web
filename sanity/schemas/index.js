@@ -30,34 +30,49 @@ const projects = {
       name: "customer",
       title: "Customer",
       type: "reference",
-      to: [{ type: "customers" }],
+      to: [{ type: "user" }],
     },
   ],
 };
-const customers = {
-  name: "customers",
-  title: "Customers",
+const users = {
+  name: "user",
+  title: "Users",
   type: "document",
   fields: [
     {
-      name: "contactName",
-      title: "Contact Name",
+      name: "name",
+      title: "Name",
       type: "string",
     },
     {
-      name: "customerTitle",
-      title: "Customer Title",
+      name: "role",
+      title: "Role",
       type: "string",
     },
     {
-      name: "contactEmail",
-      title: "Contact Email",
+      name: "password",
+      title: "Password",
       type: "string",
     },
     {
-      name: "contactPhone",
-      title: "Contact Phone",
+      name: "enterprise",
+      title: "Enterprise",
       type: "string",
+    },
+    {
+      name: "email",
+      title: "Email",
+      type: "string",
+    },
+    {
+      name: "phone",
+      title: "Phone",
+      type: "string",
+    },
+    {
+      name: "createdByCredentials",
+      title: "Created By Credentials",
+      type: "boolean",
     },
   ],
 };
@@ -119,6 +134,6 @@ const customerRequests = {
   ],
 };
 
-const schemas = [projects, customers, technos, customerRequests];
+const schemas = [projects, users, technos, customerRequests];
 
 export default schemas;
