@@ -25,7 +25,7 @@ export const options = {
         credentials: {
             email: {
                 label: 'Email',
-                type: 'text',
+                type: 'email',
                 placeholder: 'Enter your email'
             },
             password: {
