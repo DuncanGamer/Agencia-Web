@@ -3,6 +3,7 @@ import "./globals.css";
 import { Footer, Navbar } from "@/components";
 import Provider from "@/components/Provider";
 import { Toaster } from "react-hot-toast";
+import { StateContext } from "@/components/context/StateContex";
 
 export const metadata = {
   title: "DigitalToile",
@@ -16,13 +17,14 @@ const RootLayout = ({ children }) => (
         <div className="main">
           <div className="gradient" />
         </div>
-
-        <main className="app">
-          <Navbar />
-          <Toaster />
-          {children}
-          <Footer />
-        </main>
+        <StateContext>
+          <main className="app">
+            <Navbar />
+            <Toaster />
+            {children}
+            <Footer />
+          </main>
+        </StateContext>
       </Provider>
     </body>
   </html>

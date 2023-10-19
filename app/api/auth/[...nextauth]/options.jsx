@@ -17,31 +17,34 @@ export const options = {
       clientSecret: githubSecret,
     }),
     GoogleProvider({
-        clientId: googleClientId,
-        clientSecret:googleClientSecret
+      clientId: googleClientId,
+      clientSecret: googleClientSecret,
     }),
     Credentials({
-        name: 'Email',
-        credentials: {
-            email: {
-                label: 'Email',
-                type: 'email',
-                placeholder: 'Enter your email'
-            },
-            password: {
-                label: 'Password',
-                type: 'password',
-                placeholder: 'Enter your password'
-            }
+      name: "Email",
+      credentials: {
+        email: {
+          label: "Email",
+          type: "email",
+          placeholder: "Enter your email",
         },
-        async authorize(credentials) {
-            const user = await getOneUserByEmail(credentials?.email)
-            if (!user) return console.log('no user')
+        password: {
+          label: "Password",
+          type: "password",
+          placeholder: "Enter your password",
+        },
+      },
+      async authorize(credentials) {
+        const user = await getOneUserByEmail(credentials?.email);
+        if (!user) return console.log("no user");
 
-            const checkPass = await checkPassword(credentials?.password, user?.password)
-            if (checkPass) return user
-            else return console.log('Mot de passe est incorrect')
-        }
-    })
+        const checkPass = await checkPassword(
+          credentials?.password,
+          user?.password
+        );
+        if (checkPass) return user;
+        else return console.log("Mot de passe est incorrect");
+      },
+    }),
   ],
 };
