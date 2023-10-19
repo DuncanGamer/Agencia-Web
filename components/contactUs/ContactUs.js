@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import contact from "public/assets/contact.png";
+import contact from "public/assets/contact.jpg";
 import Image from "next/image";
 import { sanityClient } from "@/sanity/client";
 
@@ -184,7 +184,7 @@ const ContactUs = () => {
         </div>
       )}
       <div className="">
-        <Image src={contact} alt="possibility" width={400} height={400} />
+        <Image src={contact} alt="possibility" width={500} height={500} />
       </div>
     </div>
   );

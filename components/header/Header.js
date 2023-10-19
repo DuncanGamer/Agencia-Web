@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import people from "public/assets/people.png";
+import headerpick from "public/assets/headerpick.png";
 
 import Image from "next/image";
 import estratejia from "public/assets/estratejia.png";
@@ -26,7 +27,7 @@ const Header = () => {
         </div> */}
       </div>
       <div className="gpt3__header-image">
-        <Image src={estratejia} alt="product" width={500} height={500} />
+        <Image src={headerpick} alt="product" width={500} height={500} />
       </div>
     </div>
   );
