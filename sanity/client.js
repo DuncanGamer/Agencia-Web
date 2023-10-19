@@ -4,7 +4,7 @@ import { createClient } from "next-sanity";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
-const token = process.env.NEXT_PUBLIC_SANITY_EDITOR_TOKEN;
+const token = process.env.SANITY_EDITOR_TOKEN;
 
 export const sanityFetchClient = new SanityClient({
   projectId: projectId,

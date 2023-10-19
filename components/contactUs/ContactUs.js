@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import contact from "public/assets/contact.jpg";
 import Image from "next/image";
-import { sanityClient } from "@/sanity/client";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({

@@ -2,6 +2,7 @@ import "/components/navbar/navbar.css";
 import "./globals.css";
 import { Footer, Navbar } from "@/components";
 import Provider from "@/components/Provider";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
   title: "DigitalToile",
@@ -18,6 +19,7 @@ const RootLayout = ({ children }) => (
 
         <main className="app">
           <Navbar />
+          <Toaster />
           {children}
           <Footer />
         </main>

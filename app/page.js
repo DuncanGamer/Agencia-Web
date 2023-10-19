@@ -4,7 +4,6 @@ import { Projects, Brand, ContactUs, Possibility, Header, Whatgpt3,Blog } from "
 // import './globals.css'
 
 async function App() {
-  const customers = await getAllCustomers();
   const projects = await getAllProjects();
   const technos = await getAllTechnos();
 
