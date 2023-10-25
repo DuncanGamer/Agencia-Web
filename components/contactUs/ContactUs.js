@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import contact from "public/assets/contact.png";
+import contact from "public/assets/contact.jpg";
 import Image from "next/image";
 
 const ContactUs = () => {
@@ -52,7 +52,7 @@ const ContactUs = () => {
 
   return (
     <div
-      className=" bg-footer flex flex-row justify-between section__margin "
+      className=" bg-footer flex flex-row justify-evenly section__margin "
       id="contactUs"
     >
       {!isSubmitted ? (
@@ -183,7 +183,7 @@ const ContactUs = () => {
         </div>
       )}
       <div className="">
-        <Image src={contact} alt="possibility" width={400} height={400} />
+        <Image src={contact} alt="possibility" width={500} height={500} />
       </div>
     </div>
   );

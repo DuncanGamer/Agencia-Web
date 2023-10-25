@@ -8,3 +8,4 @@ export { default as Navbar } from "./navbar/Navbar";
 export { default as Project } from "./project/Project";
 export { default as Brand } from "./brand/Brand";
 export { default as ContactUs } from "./contactUs/ContactUs";
+export { default as Blog } from "./blog/Blog";
