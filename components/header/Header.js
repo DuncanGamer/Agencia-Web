@@ -3,7 +3,7 @@ import "./header.css";
 import people from "public/assets/people.png";
 
 import Image from "next/image";
-import estratejia from "public/assets/estratejia.png";
+import exito from "public/assets/exito.jpg";
 
 const Header = () => {
   return (
@@ -26,7 +26,7 @@ const Header = () => {
         </div>
       </div>
       <div className="gpt3__header-image">
-        <Image src={estratejia} alt="product" width={1500} height={1500} />
+        <Image src={exito} alt="product" width={1500} height={1500} />
       </div>
     </div>
   );
