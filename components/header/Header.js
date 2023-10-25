@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import people from "public/assets/people.png";
+import headerpick from "public/assets/headerpick.png";
 
 import Image from "next/image";
 import exito from "public/assets/exito.jpg";

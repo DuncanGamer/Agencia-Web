@@ -1,28 +1,29 @@
-import "./globals.css";
 import "/components/navbar/navbar.css";
-import Navbar from "@/components/navbar/Navbar";
-import './globals.css'
-import { Footer } from "@/components";
+import "./globals.css";
+import { Footer, Navbar } from "@/components";
+import Provider from "@/components/Provider";
+import { Toaster } from "react-hot-toast";
 
 export const metadata = {
-  title: "Promptopia",
-  description: "Discover & Share AI Prompts",
+  title: "DigitalToile",
+  description: "creation of digital products",
 };
 
 const RootLayout = ({ children }) => (
-  <html lang='en'>
+  <html lang="en">
     <body>
-   
-        <div className='main'>
-          <div className='gradient' />
+      <Provider>
+        <div className="main">
+          <div className="gradient" />
         </div>
 
-        <main className='app'>
-          <Navbar/>
+        <main className="app">
+          <Navbar />
+          <Toaster />
           {children}
-          <Footer/>
+          <Footer />
         </main>
-     
+      </Provider>
     </body>
   </html>
 );

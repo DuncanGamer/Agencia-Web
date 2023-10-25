@@ -6,16 +6,16 @@ const Footer = () => {
   return (
     <div className="gpt3__footer section__padding">
     <div className="gpt3__footer-heading">
-      <h1 className="gradient__text">Voulez-vous entrer dans le futur avant les autres ?</h1>
+      <h1 className="gradient__text">Contactez-nous dès aujourd'hui pour discuter de votre projet.</h1>
     </div>
 
     <div className="gpt3__footer-btn">
-      <p>Request Early Access</p>
+      <p>contact</p>
     </div>
 
     <div className="gpt3__footer-links">
       <div className="gpt3__footer-links_logo">
-        <img src={gpt3Logo} alt="gpt3_logo" />
+        {/* <img src={gpt3Logo} alt="gpt3_logo" /> */}
         <p>Crechterwoord K12 182 DK Alknjkcb, <br /> All Rights Reserved</p>
       </div>
       <div className="gpt3__footer-links_div">
@@ -40,7 +40,7 @@ const Footer = () => {
     </div>
 
     <div className="gpt3__footer-copyright">
-      <p>@2021 GPT-3. All rights reserved.</p>
+      <p>@ 2023 DigitalToile, All rights reserved.</p>
     </div>
   </div>
   )
