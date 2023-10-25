@@ -7,9 +7,9 @@ const Context = createContext();
 export const StateContext = ({ children }) => {
   const { data: session, status } = useSession();
 
-  useEffect(() => {
-    console.log('from Context', session?.user, status);
-  }, [session]);
+  // useEffect(() => {
+  //   console.log('from Context', session, status);
+  // }, [session]);
 
   return <Context.Provider value={{ session, status }}>{children}</Context.Provider>;
 };
